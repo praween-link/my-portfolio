@@ -466,6 +466,7 @@ nav a{
     display: flex;
     justify-content: center;
     display: block;
+    animation: showdiv ease-in-out 1.2s;
 }
 .section .header{
     text-align: center;
@@ -594,6 +595,21 @@ nav a{
 #education{
     display: none;
 }
+/* Projects */
+.board-item h3{
+    /* border-bottom: hidden; */
+    border-top: hidden;
+    border-right: hidden;
+}
+.about-project span{
+    color: var(--color-white-op5);
+    font-size: var(--text-size-extra-small);
+}
+.about-project span h5{
+    color: var(--color-white-op5);
+    font-size: var(--text-size-small);
+}
+
 
 /* Board List*/
 

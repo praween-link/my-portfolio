@@ -19,16 +19,8 @@ function menuToggle() {
     }
 }
 // Board List Item
-function experience() {
-    var experiance = document.getElementById("experience");
-    if (experiance.style.display === "none") {
-        experiance.style.display = "block";
-    } else {
-        experiance.style.display = "none";
-    }
-}
-function education() {
-    var experiance = document.getElementById("education");
+function viewMore(id) {
+    var experiance = document.getElementById(id);
     if (experiance.style.display === "none") {
         experiance.style.display = "block";
     } else {
