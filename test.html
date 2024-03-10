@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display JSON Data with Images</title>
+</head>
+<body>
+
+<div class="person-container" id="person-container">
+  <!-- Person cards will be populated dynamically with JavaScript -->
+</div>
+
+<script>
+  // JSON data with images and tags
+  const jsonDataWithImagesAndTags = [
+    { "name": "John Doe", "age": 30, "city": "New York", "image": "https://via.placeholder.com/200", "tags": ["tag1", "tag2", "tag3"] },
+    { "name": "Jane Smith", "age": 25, "city": "Los Angeles", "image": "https://via.placeholder.com/200", "tags": ["tag4", "tag5"] },
+    { "name": "Mike Johnson", "age": 35, "city": "Chicago", "image": "https://via.placeholder.com/200", "tags": ["tag6", "tag7", "tag8"] }
+  ];
+
+  // Function to render JSON data as person cards
+  function renderPersons(data) {
+    const container = document.getElementById('person-container');
+
+    // Clear existing person cards
+    container.innerHTML = '';
+
+    // Populate person cards with JSON data
+    data.forEach(item => {
+      const card = document.createElement('div');
+      card.classList.add('person-card');
+      card.innerHTML = `
+        <img src="${item.image}" alt="${item.name}">
+        <div><strong>Name:</strong> ${item.name}</div>
+        <div><strong>Age:</strong> ${item.age}</div>
+        <div><strong>City:</strong> ${item.city}</div>
+        <div class="additional-info">
+          <p>Additional Information:</p>
+          <ul class="tag-list">
+            ${item.tags.map(tag => `<li class="tag-list-item">${tag}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+      card.addEventListener('click', () => {
+        card.classList.toggle('show-info');
+      });
+      container.appendChild(card);
+    });
+  }
+
+  // Initial rendering of person cards
+  renderPersons(jsonDataWithImagesAndTags);
+</script>
+
+</body>
+</html>

@@ -19,55 +19,14 @@ function menuToggle() {
     }
 }
 // Board List Item
-function viewMore(id) {
+function viewMore(id, display) {
     var experiance = document.getElementById(id);
-    if (experiance.style.display === "none") {
-        experiance.style.display = "block";
+  if (experiance.style.display === "none") {
+    if (display != null) {
+      experiance.style.display = "inline-flex";
+      }else{
+        experiance.style.display = "block";}
     } else {
         experiance.style.display = "none";
     }
 }
-
-///
-document.addEventListener("DOMContentLoaded", function () {
-    const scrollImages = document.querySelector(".scroll-images");
-    const scrollLength = scrollImages.scrollWidth - scrollImages.clientWidth;
-    const leftButton = document.querySelector(".left");
-    const rightButton = document.querySelector(".right");
-  
-    function checkScroll() {
-      const currentScroll = scrollImages.scrollLeft;
-      if (currentScroll === 0) {
-        leftButton.setAttribute("disabled", "true");
-        rightButton.removeAttribute("disabled");
-      } else if (currentScroll === scrollLength) {
-        rightButton.setAttribute("disabled", "true");
-        leftButton.removeAttribute("disabled");
-      } else {
-        leftButton.removeAttribute("disabled");
-        rightButton.removeAttribute("disabled");
-      }
-    }
-  
-    scrollImages.addEventListener("scroll", checkScroll);
-    window.addEventListener("resize", checkScroll);
-    checkScroll();
-  
-    function leftScroll() {
-      scrollImages.scrollBy({
-        left: -200,
-        behavior: "smooth"
-      });
-    }
-  
-    function rightScroll() {
-      scrollImages.scrollBy({
-        left: 200,
-        behavior: "smooth"
-      });
-    }
-  
-    leftButton.addEventListener("click", leftScroll);
-    rightButton.addEventListener("click", rightScroll);
-});
-  

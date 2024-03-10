@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/images_gallery.css">
+    <script src="./js/images_gallery.js"></script>
     <script src="https://kit.fontawesome.com/6d8da61193.js" crossorigin="anonymous"></script>
     
     <title>Document</title>
@@ -50,7 +52,7 @@
                         <ul class="social-icons">
                             <li><a href="https://github.com/praween-link"><i class="fab fa-brands fa-github" aria-hidden="true"></i></a></li>
                             <li><a href="https://www.linkedin.com/in/pkumar-link/"><i class="fab fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.youtube.com/@pkumarlink5898"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                             <li><a href="https://www.instagram.com/pkumar.link/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
                         </ul>
@@ -195,10 +197,45 @@
                     </h3>
                 </div>
 
+                <div class="skills">
+                    <div class="skill-tag">
+                        <div class="dot dot-blue"></div>&nbsp;&nbsp;
+                        <span>Flutter</span>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="dot dot-green"></div>&nbsp;&nbsp;
+                        <span>Node Js</span>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="dot dot-blue-dark"></div>&nbsp;&nbsp;
+                        <span>Dart</span>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="dot"></div>&nbsp;&nbsp;
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="dot dot-blue"></div>&nbsp;&nbsp;
+                        <span>Data Structure</span>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="dot dot-orange"></div>&nbsp;&nbsp;
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="dot dot-blue"></div>&nbsp;&nbsp;
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-tag">
+                        <div class="dot dot-purple"></div>&nbsp;&nbsp;
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+
                 <div class="board-list">
                     <!-- . -->
                     <div class="board-item">
-                        <h3 onclick="viewMore('experience')">Work Experience</h3>
+                        <h3 onclick="viewMore('experience', 'inline-flex')">Work Experience</h3>
                         <div id="experience" class="sub-board-list">
                             <div class="sub-board-item">
                                 <h5>Cqlsys Technologies</h5>
@@ -217,6 +254,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                     <!-- . -->
                     <div class="board-item">
@@ -225,6 +263,7 @@
                             <div class="sub-board-item">
                                 <h5>Kurukshetra University</h5>
                                 <div class="ex-title">
+                                    <span>Geeta Engineering College</span></br>
                                     <span>Aug 2018 - May 2022</span>
                                     <h6>B.Tech (Computer Science & Engineering)</h6>
                                     <p>Description of my role</p>
@@ -243,156 +282,15 @@
                 </div>
                 <div class="items-group">
                     <h3 class="special-text">
-                        <span>Mobile Application</span>
+                        <span>Android Application</span>
                     </h3>
                     <h3 class="special-text">
-                        <span>Web Application</span>
+                        <span>IOS Application</span>
                     </h3>
                 </div>
 
                 <div class="board-list">
-                    <!-- . -->
-                    <div class="board-item">
-                        <h3 onclick="viewMore('project-1')">Ownitoo<p>
-                            Application (Android & IOS)
-                        </p></h3>
-                        <div id="project-1" class="sub-board-list">
-                            <div class="about-project">
-                                <span><h5>About: </h5>
-                                    The Ownitoo App revolutionizes buying and selling with its user-centric approach, offering features like One-to-One communication, diverse product listing options, bidding, product shares, subscription models, and dashboards. It fosters community engagement through group chats and enables interactive discussions on product shares with poll creation, streamlining transactions and enhancing user experience.
-                                </span>
-                                
-                                <span><h5>Responsible For: </h5>
-                                    <mark>Implement all the functionalities</mark>
-                                    <mark>API integration</mark> <mark>Socket-Chat</mark> <mark>Biding</mark> & <mark>Share</mark> <mark>Notifications</mark> <mark>Payment Getaways</mark>
-                                </span>
-                                <div class="cover">
-                                    <a class="left" onclick="leftScroll()">
-                                        <i class="fa-solid fa-circle-arrow-left"></i>
-                                    </a>
-
-                                    <div class="scroll-images">
-                                        <div class="child-card">
-                                            <img src="assets/phone.png">
-                                            <img class="card-overlap" src="assets/phone.png">
-                                        </div>
-                                        
-                                        <div class="child-card">
-                                            <img src="assets/phone.png">
-                                            <img class="card-overlap" src="assets/phone.png">
-                                        </div>
-                                        <div class="child-card">
-                                            <img src="assets/phone.png">
-                                            <img class="card-overlap" src="assets/phone.png">
-                                        </div>
-                                        <div class="child-card">
-                                            <img src="assets/phone.png">
-                                            <div class="stack-color"></div>
-                                        </div>
-                                    </div>
-
-                                    <a class="right" onclick="leftScroll()">
-                                        <i class="fa-solid fa-circle-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- . -->
-                    <div class="board-item">
-                        <h3 onclick="viewMore('project-1')">Blubin<p>
-                            Application (Android & IOS)
-                        </p></h3>
-                        <div id="project-1" class="sub-board-list">
-                            <div class="about-project">
-                                <span><h5>About: </h5>
-                                    It is elated to a Trash Pickup Request- On-Demand Garbage Collection Service Needed.
-                                </span>
-                                
-                                <span><h5>Responsible For: </h5>
-                                    <mark>Implement all the functionalities</mark>
-                                    <mark>API integration</mark> <mark>Notifications</mark> 
-                                </span>
-                                <div class="cover">
-                                    <a class="left" onclick="leftScroll()">
-                                        <i class="fa-solid fa-circle-arrow-left"></i>
-                                    </a>
-
-                                    <div class="scroll-images">
-                                        <div class="child-card">
-                                            <img src="assets/phone.png">
-                                            <img class="card-overlap" src="assets/phone.png">
-                                        </div>
-                                        
-                                        <div class="child-card">
-                                            <img src="assets/phone.png">
-                                            <img class="card-overlap" src="assets/phone.png">
-                                        </div>
-                                        <div class="child-card">
-                                            <img src="assets/phone.png">
-                                            <img class="card-overlap" src="assets/phone.png">
-                                        </div>
-                                        <div class="child-card">
-                                            <img src="assets/phone.png">
-                                            <div class="stack-color"></div>
-                                        </div>
-                                    </div>
-
-                                    <a class="right" onclick="leftScroll()">
-                                        <i class="fa-solid fa-circle-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- . -->
-                    <div class="board-item">
-                        <h3 onclick="viewMore('project-1')">Jobbie<p>
-                            Application (Android & IOS)
-                        </p></h3>
-                        <div id="project-1" class="sub-board-list">
-                            <div class="about-project">
-                                <span><h5>About: </h5>
-                                    The project is related to job service posts and hiring workers. User(as a employer and worker), Chat, Map(show new jobs), wallet, post jobs, hire workers.
-                                </span>
-                                
-                                <span><h5>Responsible For: </h5>
-                                    <mark>Implement all the functionalities</mark>
-                                    <mark>API integration</mark> <mark>Notifications</mark>
-                                    <mark>Socket-Chat</mark> <mark>Payment Getaways</mark>  <mark class="mark">Map</mark>
-                                </span>
-                                <div class="cover">
-                                    <a class="left" onclick="leftScroll()">
-                                        <i class="fa-solid fa-circle-arrow-left"></i>
-                                    </a>
-
-                                    <div class="scroll-images">
-                                        <div class="child-card">
-                                            <img src="assets/phone.png">
-                                            <img class="card-overlap" src="assets/phone.png">
-                                        </div>
-                                        
-                                        <div class="child-card">
-                                            <img src="assets/phone.png">
-                                            <img class="card-overlap" src="assets/phone.png">
-                                        </div>
-                                        <div class="child-card">
-                                            <img src="assets/phone.png">
-                                            <img class="card-overlap" src="assets/phone.png">
-                                        </div>
-                                        <div class="child-card">
-                                            <img src="assets/phone.png">
-                                            <div class="stack-color"></div>
-                                        </div>
-                                    </div>
-
-                                    <a class="right" onclick="leftScroll()">
-                                        <i class="fa-solid fa-circle-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="my-projects"></div>
                 </div>
             </div>
 
@@ -414,5 +312,13 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
     </div>
 </body>
+
 <script src="./js/script.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/common/project_widgets.js"></script>
+<script src="./js/common/image_view.js"></script>
+<script>
+    // Get the modal
+
+</script>
 </html>

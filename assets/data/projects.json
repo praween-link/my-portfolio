@@ -1,0 +1,30 @@
+[
+    {
+        "id": "01",
+        "name": "Ownitoo",
+        "sub_title": "Application (Android & IOS)",
+        "about": "Ownitoo is a user-friendly mobile app that changes the way people buy and sell items. Whether you're a seller or a buyer, Ownitoo has you covered. Sellers can list their items for sale directly or opt for a bidding process. Buyers have the option to purchase items outright or invest in shares of products, allowing for shared ownership within a community. Plus, Ownitoo includes a chat feature, enabling users to communicate in group chats or have one-on-one conversations with buyers and sellers. By promoting collaboration and transparency, Ownitoo creates a hassle-free marketplace where everyone can find what they need and make fair deals.",
+        "key_points": [
+            "Implement all the functionalities","API integration","Socket-Chat","Biding & Share","Notifications","Payment","Getaways"
+        ],
+        "images": [
+            ["assets/phone.png", "assets/phone.png"],
+            ["assets/phone.png", "assets/phone.png"],
+            ["assets/phone.png", "assets/phone.png"]
+        ]
+    },
+    {
+        "id": "01",
+        "name": "Ownitoo-2",
+        "sub_title": "Application (Android & IOS)",
+        "about": "Ownitoo is a user-friendly mobile app that changes the way people buy and sell items. Whether you're a seller or a buyer, Ownitoo has you covered. Sellers can list their items for sale directly or opt for a bidding process. Buyers have the option to purchase items outright or invest in shares of products, allowing for shared ownership within a community. Plus, Ownitoo includes a chat feature, enabling users to communicate in group chats or have one-on-one conversations with buyers and sellers. By promoting collaboration and transparency, Ownitoo creates a hassle-free marketplace where everyone can find what they need and make fair deals.",
+        "key_points": [
+            "Implement all the functionalities","API integration","Socket-Chat","Biding & Share","Notifications","Payment","Getaways"
+        ],
+        "images": [
+            ["assets/phone.png", "assets/phone.png"],
+            ["assets/phone.png", "assets/phone.png"]
+        ]
+        
+    }
+]

@@ -20,6 +20,11 @@ p, h1, h2, h3, h4, h5, h6, a, i, span, li{
     --color-black-op5:rgba(11, 11, 11, 0.532);
     --color-black-op3:rgba(3, 3, 3, 0.237);
     --color-red: red;
+    --color-orange: #DC4A31;
+    --color-purple: #7510F0;
+    --color-blue: #4287f5;
+    --color-blue-dark: #065597;
+    --color-green: #008001;
     /* Body */
     --color-body-bg: rgb(49, 47, 47);
     /* App body */
@@ -484,6 +489,50 @@ nav a{
     text-align: center;
 }
 
+/* Skills ----------------------------------- */
+.skills{
+    display: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+    text-align: center;
+}
+.skill-tag{
+    border-radius: 50px;
+    border: solid var(--color-white-op5) 1px;
+    padding: 2px 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px;
+}
+.skill-tag .dot{
+    border-radius: 50%;
+    color: var(--color-red);
+    height: 8px;
+    width: 8px;
+    background-color: var(--color-red);
+}
+.skill-tag span{
+    color: var(--color-white);
+    font-size: var(--text-size-extra-small);
+}
+.skill-tag .dot-blue{
+    background-color: var(--color-blue);
+}
+.skill-tag .dot-blue-dark{
+    background-color: var(--color-blue-dark);
+}
+.skill-tag .dot-green{
+    background-color: var(--color-green);
+}
+.skill-tag .dot-orange{
+    background-color: var(--color-orange);
+}
+.skill-tag .dot-purple{
+    background-color: var(--color-purple);
+}
+/*-------------------------------------------------------*/
 /*Special Text Group*/
 .items-group{
     text-align: center;
@@ -494,7 +543,11 @@ nav a{
     border-style: solid;
     border-color: var(--color-white-op5);
     border-width: 0.2px;
+    /* border-bottom: hidden; */
+
+
 }
+
 .items-group .special-text{
     display: inline;
     color: var(--color-white);
@@ -594,22 +647,40 @@ nav a{
 }
 #education{
     display: none;
+
 }
 /* Projects */
+
+#project-1, #project-2, #project-3, #project-4{
+    display: none;
+}
+
 .board-item h3{
     /* border-bottom: hidden; */
     border-top: hidden;
     border-right: hidden;
 }
+
+.about-project {
+    width: 45vw;
+    display: block;
+}
+
+.about-project-photo {
+    width: 40vw;
+    display: block;
+}
 .about-project span{
     color: var(--color-white-op5);
-    font-size: var(--text-size-extra-small);
-    padding-bottom: 18px;
+    font-size: var(--text-size-small);
+        padding-top: 12px;
+        margin: 8px;
 }
 
 .about-project span h5{
     color: var(--color-white-op5);
     font-size: var(--text-size-small);
+    padding-top: 12px;
 }
 
 .about-project span mark{
@@ -621,7 +692,6 @@ nav a{
 
 
 /* Board List*/
-
 
 p{
     color: #aaa;
@@ -642,94 +712,10 @@ p{
 }
 
 /* //// */
-.cover {
-    width: 78vw;
-    position: relative;
-    padding: 0px 30px;
-    margin-top: 30px;
-}
-
-.cover .left {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.cover .right {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.cover .right i, .cover .left i{
-    color: var(--color-white-op5);
-}
-
-.scroll-images {
-    position: relative;
-    width: 100%;
-    /* height: auto; */
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: hidden;
-    overflow-y: hidden;  
-    overflow: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    justify-items: center;
-    align-items: center;
-}
-
-.child-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 12px;
-    -webkit-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
-    box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);
-    border-radius: 25px;
-}
-.child-card img{
-    max-width: 160px;
-    object-fit: contain;
-    border-radius: 25px;
-}
-
-.stack-color{
-    height: 100%; width: 100%;
-    background-color: rgba(0, 0, 0, 0.244);
-}
-
-.scroll-images::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-    background-color: #aaa;
+.sub-board-list{
     display: none;
 }
-
-.scroll-images::-webkit-scrollbar-thumb {
-    background-color: white;
-}
-
-.card-overlap{
-    margin-left: -45px;
-    margin-bottom: -10px;
-    transform: rotate(5deg);
-}
-.card-insize{
-    margin-left: -45px;
-    margin-bottom: -10px;
-    transform: rotate(5deg);
-}
-
-@media only screen and (max-width: 1000px){
-    .cover {
-        width: 75vw;
+.show-info .sub-board-list{
+    display: inline-flex;
     }
-}
-@media only screen and (max-width: 600px){
-    .cover {
-        width: 70vw;
-    }
-}
+    
