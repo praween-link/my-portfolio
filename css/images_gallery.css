@@ -43,7 +43,7 @@
     margin-left: -420px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
     .gallery {
         margin: 58px 12px;
     }

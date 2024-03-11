@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/images_gallery.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
     <script src="./js/images_gallery.js"></script>
     <script src="https://kit.fontawesome.com/6d8da61193.js" crossorigin="anonymous"></script>
     
@@ -18,22 +20,24 @@
                     <span>Nav Bar</span>
                     <div class="nav-bar-items" id="nav-desktop-view">
                         <a href="#">Home</a>
-                        <a href="#">About Me</a>
-                        <a href="#">Project</a>
-                        <a href="#">Contact Us</a>
+                        <a href="#aboutme">About Me</a>
+                        <a href="#projects">Project</a>
+                        <a href="#contact-us">Contact Us</a>
                     </div>
                     <div id="menu">
-                        <a onclick="menuToggle()" id="menu" class="menu"><i class="fa-solid fa-bars"></i></a>
+                        <a onclick="menuToggle()" id="menu" class="menu"><i class="fa-solid fa-bars" style="font-size: 1.2rem;"></i></a>
                     </div>
                 </nav>
             </header>
             <!-- Menu Items -->
             <div id="nav-menu-items" class="nav-menu-items">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <div>
+                        <a onclick="menuToggle()" id="menu"><i class="fa-solid fa-xmark" style="font-size: 1.5rem; padding-right: 6px;"></i></a>
+                    </div>                    <li><a onclick="menuToggle()" href="#">Home</a></li>
+                    <li><a onclick="menuToggle()" href="#aboutme">About Me</a></li>
+                    <li><a onclick="menuToggle()" href="#projects">Project</a></li>
+                    <li><a onclick="menuToggle()" href="#">Contact Us</a></li>
                 </ul>
             </div>
             <!-- Home Section -->
@@ -182,8 +186,8 @@
 
             <!-- Section -->
 
-            <!-- About Me -->
-            <div class="section">
+<!-- ======================= About Me ====================== -->
+            <div id="aboutme" class="section">
                 <div class="header">
                     <span>About Me</span>
                     <p>Experience, Skills & Educations</p>
@@ -195,6 +199,15 @@
                     <h3 class="special-text">
                         <span>Web Application</span>
                     </h3>
+                </div>
+
+                <div class="aboutme-text-card">
+                    <p class="amount-me-text">
+                        Hey there! I'm Praween Kumar, a driven Flutter developer dedicated to crafting exceptional cross-platform mobile experiences. With a B.Tech from Kurukshetra University and two years of experience, I'm well-versed in Dart, mobile app architecture, and problem-solving.
+                    </p>
+                    <p class="amount-me-text">
+    I thrive on collaboration and excel at turning ideas into reality. Let's team up and create something extraordinary!
+                    </p>
                 </div>
 
                 <div class="skills">
@@ -234,8 +247,9 @@
 
                 <div class="board-list">
                     <!-- . -->
-                    <div class="board-item">
-                        <h3 onclick="viewMore('experience', 'inline-flex')">Work Experience</h3>
+                    <div class="board-item exp">
+                        <h3 onclick="viewMore('experience', 'inline-flex')"><span>Work Experience</span>
+                            <i class="fa-solid fa-angle-left"></i></h3>
                         <div id="experience" class="sub-board-list">
                             <div class="sub-board-item">
                                 <h5>Cqlsys Technologies</h5>
@@ -257,8 +271,9 @@
                         
                     </div>
                     <!-- . -->
-                    <div class="board-item">
-                        <h3 onclick="viewMore('education')">Education</h3>
+                    <div class="board-item exp edu">
+                        <h3 onclick="viewMore('education')"><span>Education</span>
+                            <i class="fa-solid fa-angle-left"></i></h3>
                         <div id="education" class="sub-board-list">
                             <div class="sub-board-item">
                                 <h5>Kurukshetra University</h5>
@@ -273,9 +288,8 @@
                     </div>
                 </div>
             </div>
-
-            <!-- My Projects/Works -->
-            <div class="section">
+<!-- ======================= My Projects/Works ====================== -->
+            <div id="projects" class="section">
                 <div class="header">
                     <span>Projects</span>
                     <p>Android & IOS Application</p>
@@ -293,22 +307,28 @@
                     <div id="my-projects"></div>
                 </div>
             </div>
+        </div>
 
+<!-- ======================= Footer Section ========================-->
 
-            <p>
-                What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+        <div id="contact-us" class="footer-section">
+            <div class="footer-contents">
+                <h2>Praween Kumar</h2>
+                <h6>pkumar.link@gmail.com</h6>
+                <!-- Social Icons -->
+                <ul class="social-icons">
+                    <li><a href="https://github.com/praween-link"><i class="fab fa-brands fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/pkumar-link/"><i class="fab fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/@pkumarlink5898"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/pkumar.link/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+                <!---------->
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2024 Praween Kumar</span>
+                <a href="mailto:pkumar.link@gmail.com"><span><i class="fa-solid fa-envelope"></i> Contact Us</span></a>
+            </div>
         </div>
     </div>
 </body>
@@ -317,8 +337,15 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <script src="./js/data.js"></script>
 <script src="./js/common/project_widgets.js"></script>
 <script src="./js/common/image_view.js"></script>
-<script>
-    // Get the modal
 
-</script>
+<script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+
 </html>

@@ -13,7 +13,8 @@ const projectsData = [
             "assets/phone.png",
             "assets/phone.png",
             "assets/phone.png"
-        ]
+        ],
+        "project_link": "link",
     },
     {
         "id": "01",
@@ -27,7 +28,7 @@ const projectsData = [
             "assets/phone.png",
             "assets/phone.png",
             "assets/phone.png"
-        ]
+        ],
         
     },
     {
@@ -45,9 +46,10 @@ const projectsData = [
             "assets/project/mytasks/1.webp", "assets/project/mytasks/2.webp",
             "assets/project/mytasks/3.webp", "assets/project/mytasks/4.webp",
             "assets/project/mytasks/5.webp"
-        ]
+        ],
+        "project_link": "https://play.google.com/store/apps/details?id=com.pkumar.link.mytasks",
         
     }
 ]
 
-
+/// Json Data of Experiance

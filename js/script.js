@@ -23,10 +23,14 @@ function viewMore(id, display) {
     var experiance = document.getElementById(id);
   if (experiance.style.display === "none") {
     if (display != null) {
-      experiance.style.display = "inline-flex";
+        experiance.style.display = "inline-flex";
+
       }else{
-        experiance.style.display = "block";}
+          experiance.style.display = "block";
+      }
+      experiance.i.style.transform = "rotate(270deg)";
     } else {
         experiance.style.display = "none";
+      experiance.i.style.transform = "rotate(0deg)";
     }
 }
