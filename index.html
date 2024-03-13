@@ -14,15 +14,15 @@
 </head>
 <body>
     <div class="app">
-        <div class="app-body">
+        <div id="home" class="app-body">
             <header>
                 <nav>
                     <span>Nav Bar</span>
                     <div class="nav-bar-items" id="nav-desktop-view">
-                        <a href="#">Home</a>
-                        <a href="#aboutme">About Me</a>
-                        <a href="#projects">Project</a>
-                        <a href="#contact-us">Contact Us</a>
+                        <a href="#home" class="remove-hash">Home</a>
+                        <a href="#aboutme" class="remove-hash">About Me</a>
+                        <a href="#projects" class="remove-hash">Project</a>
+                        <a href="#contact-us" class="remove-hash">Contact Us</a>
                     </div>
                     <div id="menu">
                         <a onclick="menuToggle()" id="menu" class="menu"><i class="fa-solid fa-bars" style="font-size: 1.2rem;"></i></a>
@@ -246,8 +246,12 @@
                 </div>
 
                 <div class="board-list">
+                    <div id="my-experiances"></div>
+                </div>
+                <!-- <div class="board-list"> -->
+                    
                     <!-- . -->
-                    <div class="board-item exp">
+                    <!-- <div class="board-item exp">
                         <h3 onclick="viewMore('experience', 'inline-flex')"><span>Work Experience</span>
                             <i class="fa-solid fa-angle-left"></i></h3>
                         <div id="experience" class="sub-board-list">
@@ -269,9 +273,9 @@
                             </div>
                         </div>
                         
-                    </div>
+                    </div> -->
                     <!-- . -->
-                    <div class="board-item exp edu">
+                    <!-- <div class="board-item exp edu">
                         <h3 onclick="viewMore('education')"><span>Education</span>
                             <i class="fa-solid fa-angle-left"></i></h3>
                         <div id="education" class="sub-board-list">
@@ -285,9 +289,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
+                <!-- </div> -->
             </div>
+
 <!-- ======================= My Projects/Works ====================== -->
             <div id="projects" class="section">
                 <div class="header">
@@ -339,13 +344,24 @@
 <script src="./js/common/image_view.js"></script>
 
 <script>
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-    }
-    
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-    }
-    </script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var links = document.querySelectorAll('.remove-hash');
+      links.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the default behavior of navigating to the section
+
+          var href = this.getAttribute('href');
+          var sectionId = href.substring(1); // Remove the '#' symbol
+          var targetSection = document.getElementById(sectionId);
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the section smoothly
+          }
+
+          // Change the URL without the '#' symbol
+          history.pushState({}, document.title, window.location.pathname + window.location.search);
+        });
+      });
+    });
+  </script>
 
 </html>

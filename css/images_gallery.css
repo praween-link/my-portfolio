@@ -8,12 +8,13 @@
 
 .gallery img {
     width: 170px;
-    padding: 5px;
+    background-color: #ffffff9c;
     transform: 1s;
     object-fit: cover;
-    padding: 5px;
-    border-radius: 14px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2px;
+        padding-top: 4px;
+        border-radius: 18px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.077), 0 6px 20px 0 rgba(0, 0, 0, 0.115);
 }
 
 .gallery img:hover {

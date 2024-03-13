@@ -5,13 +5,18 @@ function renderProjects(data) {
 
     data.forEach((item, index) => {
         const card = document.createElement('div');
-        card.classList.add('person-card');
+        card.classList.add('project-card');
         card.innerHTML = `
             <div class="board-item" style="padding-bottom: ${index === data.length - 1 ? 0 : 1.5}rem">
                 <h3 class="on-project-tab"><span>${item.name}
                 <p>${item.sub_title}</p></span> <i class="fa-solid fa-angle-left"></i>
                 </h3>
                 <div id="project-${item.id}" class="sub-board-list show-infox">
+                    <div class="pro-${item.id} gallery about-project-photo">
+                        ${item.images.map((img, idx) => `
+                        <a href="${img}" data-lightbox="mygallery-${item.id}"><img class="${idx == 0 ? 'view-left' : idx == 1 ? 'view-center' : idx == 2 ? 'view-right' : 'hide-img'}" src="${img}"></a>
+                        `)}
+                    </div>
                     <div class="about-project">
                         <span><h5>About: </h5>
                             ${item.about}
@@ -26,11 +31,7 @@ function renderProjects(data) {
                         </a></span>`: ''
                         }
                     </div>
-                    <div class="pro-${item.id} gallery about-project-photo">
-                        ${item.images.map((img, idx) => `
-                        <a href="${img}" data-lightbox="mygallery-${item.id}"><img class="${idx == 0 ? 'view-left' : idx == 1 ? 'view-center' : idx == 2 ? 'view-right' : 'hide-img'}" src="${img}"></a>
-                        `)}
-                    </div>
+
                     
                 </div>
             </div>
@@ -45,7 +46,7 @@ function renderProjects(data) {
     });
 }
 renderProjects(projectsData);
-const containerX = document.querySelectorAll('.person-card');
+const containerX = document.querySelectorAll('.project-card');
 
 containerX.forEach(sec => {
     let mySection = sec.querySelector('.on-project-tab');
@@ -58,6 +59,43 @@ containerX.forEach(sec => {
 
 /// Experiance 
 
+/// Project
 function renderExperiances(data) {
+    const container = document.getElementById('my-experiances');
+    container.innerHTML = '';
 
+    data.forEach((item, index) => {
+
+        const card = document.createElement('div');
+        card.classList.add('experiance-card');
+        card.innerHTML = `
+            <div class="board-item" style="padding-bottom: ${index === data.length - 1 ? 0 : 1.5}rem">
+                <h3 class="on-exp-tab"><span>${item.name}</span>
+                <i class="fa-solid fa-angle-left"></i></h3>
+                <div id="experience" class="sub-board-list">
+                ${item.items.map(expData => `<div class="sub-board-item">
+                            <h5>${expData.title}</h5>
+                            <div class="ex-title">
+                                <span>${expData.start_date} - ${expData.end_date}</span>
+                                <h6>${expData.title}</h6>
+                                <p>${expData.describe}</p>
+                            </div>
+                        </div>
+                    `).join('')}
+            </div>
+            </div>
+        `;
+        container.appendChild(card);
+        console.log("==> ", item);
+    });
 }
+renderExperiances(experianceData);
+const containerExperiance = document.querySelectorAll('.experiance-card');
+
+containerExperiance.forEach(sec => {
+    let mySection = sec.querySelector('.on-exp-tab');
+    console.log("---> ", sec);
+    mySection.addEventListener('click', () => {
+        sec.classList.toggle('show-info');
+    });
+});
