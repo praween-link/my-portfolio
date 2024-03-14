@@ -12,9 +12,9 @@ function renderProjects(data) {
                 <p>${item.sub_title}</p></span> <i class="fa-solid fa-angle-left"></i>
                 </h3>
                 <div id="project-${item.id}" class="sub-board-list show-infox">
-                    <div class="pro-${item.id} gallery about-project-photo">
+                    <div class="pro-${item.id} gallery about-project-photo"> 
                         ${item.images.map((img, idx) => `
-                        <a href="${img}" data-lightbox="mygallery-${item.id}"><img class="${idx == 0 ? 'view-left' : idx == 1 ? 'view-center' : idx == 2 ? 'view-right' : 'hide-img'}" src="${img}"></a>
+                        <a href="${img}" data-lightbox="mygallery-${item.id}"><img class="${idx == 0 ? 'view-left' : idx == 1 ? 'view-center' : idx == 2 ? 'view-right' : 'hide-img'}" src="${img}" style="color:red;"></a>
                         `)}
                     </div>
                     <div class="about-project">
@@ -74,10 +74,10 @@ function renderExperiances(data) {
                 <i class="fa-solid fa-angle-left"></i></h3>
                 <div id="experience" class="sub-board-list">
                 ${item.items.map(expData => `<div class="sub-board-item">
-                            <h5>${expData.title}</h5>
+                            <h5>${expData.logo != null ? `<img class="mix-blend-mode: multiply;" src="${expData.logo}" height="20"></img>&nbsp;` : ''} ${expData.title}</h5>
+                            <p>${expData.location} (<span>${expData.start_date} - ${expData.end_date}</span>)</p>
                             <div class="ex-title">
-                                <span>${expData.start_date} - ${expData.end_date}</span>
-                                <h6>${expData.title}</h6>
+                                <h6>About</h6>
                                 <p>${expData.describe}</p>
                             </div>
                         </div>

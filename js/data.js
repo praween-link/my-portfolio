@@ -23,9 +23,62 @@ const projectsData = [
             "assets/project/ownitoo/12.jpg",
             "assets/project/ownitoo/13.jpg",
             "assets/project/ownitoo/14.jpg",
-            "assets/project/ownitoo/15.jpg",
+            "assets/project/ownitoo/15.jpg"
         ],
-        "project_link": "https://drive.google.com/drive/folders/1BJM7p_8KiZ0oOgnJ_2Qqda4LXyumnpuG?usp=drive_link",
+        "project_link": "https://drive.google.com/drive/folders/1BJM7p_8KiZ0oOgnJ_2Qqda4LXyumnpuG?usp=drive_link"
+    },
+    {
+        "id": "01",
+        "name": "BluBin",
+        "sub_title": "Application (Android & IOS)",
+        "about": "Ownitoo is a user-friendly mobile app that changes the way people buy and sell items. Whether you're a seller or a buyer, Ownitoo has you covered. Sellers can list their items for sale directly or opt for a bidding process. Buyers have the option to purchase items outright or invest in shares of products, allowing for shared ownership within a community. Plus, Ownitoo includes a chat feature, enabling users to communicate in group chats or have one-on-one conversations with buyers and sellers. By promoting collaboration and transparency, Ownitoo creates a hassle-free marketplace where everyone can find what they need and make fair deals.",
+        "key_points": [
+            "Implement all the functionalities", "API integration", "Socket-Chat", "Biding & Share", "Notifications", "Payment", "Getaways"
+        ],
+        "images": [
+            "assets/project/blubin/blubin02.jpeg",
+            "assets/project/blubin/blubin08.jpeg",
+            "assets/project/blubin/blubin01.jpeg",
+            "assets/project/blubin/blubin03.jpeg",
+            "assets/project/blubin/blubin04.jpeg",
+            "assets/project/blubin/blubin05.jpeg",
+            "assets/project/blubin/blubin06.jpeg",
+            "assets/project/blubin/blubin07.jpeg",
+            "assets/project/blubin/blubin09.jpeg",
+            "assets/project/blubin/blubin10.jpeg",
+            "assets/project/blubin/blubin11.jpeg",
+            "assets/project/blubin/blubin12.jpeg",
+            "assets/project/blubin/blubin13.jpeg"
+        ],
+        "project_link": "https://drive.google.com/drive/folders/11wYTPi6h3_CaO5Pd4wMFCXdjZ43Lb9BS?usp=drive_link"
+    },
+    {
+        "id": "01",
+        "name": "OwnUrHealth",
+        "sub_title": "Application (Android & IOS)",
+        "about": "Ownitoo is a user-friendly mobile app that changes the way people buy and sell items. Whether you're a seller or a buyer, Ownitoo has you covered. Sellers can list their items for sale directly or opt for a bidding process. Buyers have the option to purchase items outright or invest in shares of products, allowing for shared ownership within a community. Plus, Ownitoo includes a chat feature, enabling users to communicate in group chats or have one-on-one conversations with buyers and sellers. By promoting collaboration and transparency, Ownitoo creates a hassle-free marketplace where everyone can find what they need and make fair deals.",
+        "key_points": [
+            "Implement all the functionalities", "API integration", "Socket-Chat", "Biding & Share", "Notifications", "Payment", "Getaways"
+        ],
+        "images": [
+            "assets/project/ownurhealth/ouh01.jpeg",
+            "assets/project/ownurhealth/ouh02.jpeg",
+            "assets/project/ownurhealth/ouh03.jpeg",
+            "assets/project/ownurhealth/ouh04.jpeg",
+            "assets/project/ownurhealth/ouh05.jpeg",
+            "assets/project/ownurhealth/ouh06.jpeg",
+            "assets/project/ownurhealth/ouh07.jpeg",
+            "assets/project/ownurhealth/ouh08.jpeg",
+            "assets/project/ownurhealth/ouh09.jpeg",
+            "assets/project/ownurhealth/ouh10.jpeg",
+            "assets/project/ownurhealth/ouh11.jpeg",
+            "assets/project/ownurhealth/ouh12.jpeg",
+            "assets/project/ownurhealth/ouh13.jpeg",
+            "assets/project/ownurhealth/ouh14.jpeg",
+            "assets/project/ownurhealth/ouh15.jpeg",
+            "assets/project/ownurhealth/ouh16.jpeg",
+        ],
+        "project_link": "https://play.google.com/store/apps/details?id=com.ownUrHealth"
     },
     {
         "id": "01",
@@ -36,11 +89,24 @@ const projectsData = [
             "Implement all the functionalities", "API integration", "Socket-Chat", "Notifications", "Payment Getaways", "Map"
         ],
         "images": [
-            "assets/phone.png",
-            "assets/phone.png",
-            "assets/phone.png"
+            "assets/project/jobbie/jobbie01.jpeg",
+            "assets/project/jobbie/jobbie02.jpeg",
+            "assets/project/jobbie/jobbie03.jpeg",
+            "assets/project/jobbie/jobbie04.jpeg",
+            "assets/project/jobbie/jobbie05.jpeg",
+            "assets/project/jobbie/jobbie06.jpeg",
+            "assets/project/jobbie/jobbie07.jpeg",
+            "assets/project/jobbie/jobbie08.jpeg",
+            "assets/project/jobbie/jobbie09.jpeg",
+            "assets/project/jobbie/jobbie10.jpeg",
+            "assets/project/jobbie/jobbie11.jpeg",
+            "assets/project/jobbie/jobbie12.jpeg",
+            "assets/project/jobbie/jobbie13.jpeg",
+            "assets/project/jobbie/jobbie14.jpeg",
+            "assets/project/jobbie/jobbie15.jpeg",
+            "assets/project/jobbie/jobbie16.jpeg",
+            "assets/project/jobbie/jobbie17.jpeg"
         ],
-        "project_link": "https://drive.google.com/drive/folders/1VzCAbMxMdMFNOH7Osxzq94CQa7xKub-Q?usp=drive_link",
     },
     {
         "id": "01",
@@ -71,6 +137,7 @@ const experianceData = [
         "items": [
             {
                 "id": "1",
+                "logo": "assets/logoes/cqlsys.png",
                 "title": "Cqlsys Technologies",
                 "location": "Mohali, Punjab",
                 "start_date": "July 2023",
@@ -80,6 +147,7 @@ const experianceData = [
             },
             {
                 "id": "2",
+                "logo": "assets/logoes/nexever.png",
                 "title": "Nexever",
                 "location": "Mohali, Punjab",
                 "start_date": "May 2022",
@@ -95,6 +163,7 @@ const experianceData = [
         "items": [
             {
                 "id": "2",
+                "logo": "assets/logoes/kuk.png",
                 "title": "Kurukshetra University",
                 "location": "Geeta Engineering College",
                 "start_date": "Aug 2018",
