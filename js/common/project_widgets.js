@@ -14,8 +14,10 @@ function renderProjects(data) {
                 <div id="project-${item.id}" class="sub-board-list show-infox">
                     <div class="pro-${item.id} gallery about-project-photo"> 
                         ${item.images.map((img, idx) => `
-                        <a href="${img}" data-lightbox="mygallery-${item.id}"><img class="${idx == 0 ? 'view-left' : idx == 1 ? 'view-center' : idx == 2 ? 'view-right' : 'hide-img'}" src="${img}" style="color:red;"></a>
-                        `)}
+                        <a href="${img}" data-lightbox="mygallery-${item.id}">
+                            <img class="${idx == 0 ? 'view-left' : idx == 1 ? 'view-center' : idx == 2 ? 'view-right' : 'hide-img'}" src="${img}">
+                        </a>
+                        `).join('')}
                     </div>
                     <div class="about-project">
                         <span><h5>About: </h5>
@@ -24,25 +26,16 @@ function renderProjects(data) {
                         <span><h5>Responsible For: </h5>
                             ${item.key_points.map(key => `<mark>${key}</mark>&nbsp;&nbsp;`).join('')}
                         </span>
-                        </br>
-                        ${
-            item.project_link != null ? `<span><a href='${item.project_link}'><h4>View</h4>
-                            
-                        </a></span>`: ''
-                        }
+                        
+                        <ul class="social-icons social-icons-sqr">
+                            ${item.android == null ? '' : `<li><a href="${item.android}"><i class="fab fa-brands fa-google-play" aria-hidden="true"></i></a></li>`}
+                            ${item.ios == null ? '' : `<li><a href="${item.ios}"><i class="fab fa-brands fa-app-store" aria-hidden="true"></i></a></li>`}
+                        </ul>
                     </div>
-
-                    
-                </div>
             </div>
         `;
 
-        // card.addEventListener('click', () => {
-
-        //     card.classList.toggle('show-info');
-        // });
         container.appendChild(card);
-        console.log("==> ", item);
     });
 }
 renderProjects(projectsData);
@@ -50,16 +43,14 @@ const containerX = document.querySelectorAll('.project-card');
 
 containerX.forEach(sec => {
     let mySection = sec.querySelector('.on-project-tab');
-    console.log("---> ", sec);
+
     mySection.addEventListener('click', () => {
         sec.classList.toggle('show-info');
+        console.log("---> ", sec);
     });
 });
 
-
-/// Experiance 
-
-/// Project
+/// Experiance
 function renderExperiances(data) {
     const container = document.getElementById('my-experiances');
     container.innerHTML = '';
